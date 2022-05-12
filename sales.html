@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="sales.css">
+
+    <title>robipos</title>
+ 
+    <link rel="shortcut icon" type="image/jpg" href="logo.ico"/>
+
+</head>
+<body>
+    <div class="main-container">
+        <nav class="sales-navigation">
+            <ul>
+                <li>
+                    <span class="icon"><ion-icon name="terminal-outline"></ion-icon></span>
+                    <a href="#"><h1>ROBIPOS</h1></a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="timer-outline"></ion-icon></span>
+                    <a href="#">Dashbooard</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="file-tray-stacked-outline"></ion-icon></span>
+                    <a href="#">Cashier Sales</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="basket-outline"></ion-icon></span>
+                    <a href="#">Purchases</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="journal-outline"></ion-icon></span>
+                    <a href="#">Income</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="ticket-outline"></ion-icon></span>
+                    <a href="#">Expenses</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="git-branch-outline"></ion-icon></span>
+                    <a href="#">Branch</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
+                    <a href="#">People/Contacts</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    <a href="#">Users</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="timer-outline"></ion-icon></span>
+                    <a href="#">Stocklist(Counter)</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="server-outline"></ion-icon></span>
+                    <a href="#">Products(Main Store)</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="warning-outline"></ion-icon></span>
+                    <a href="#">Damaged Products</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="file-tray-outline"></ion-icon></span>
+                    <a href="#">Manage Reports</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <a href="#">Configuration</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <a href="#">Update Profile</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="keypad-outline"></ion-icon></span>
+                    <a href="#">Change Password</a>
+                </li>
+                <li>
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <a href="#">Sign Out</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div class="topbar">
+                <div class="toggle"><ion-icon name="menu-outline"></ion-icon></div>
+                <!-- <div class="searchbox">
+                    <label >
+                        <input type="text"  placeholder="Search Here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div> -->
+
+                <div class="welcome-message">
+                    <span>Welcome</span>
+                    <span id="userName">Welcome</span>
+                    <span>Welcome</span>
+                </div>
+    
+                <div class="user-image">
+                    <img src="logo.png" alt="User profile picture">
+                </div>
+            </div>
+            <div class="sales-window">
+                <div class="sale-details">
+                    
+                        <input type="search" placeholder="Search with barcode, code or item name"name="" id="" class="searchbox">
+                    
+                    <form class="value-form">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                      </form>
+                      <button type="submit">Add Product</button>
+                </div>
+                <div class="product-display">
+                    <table>
+                        <thead>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Discount</th>
+                            <th>VAT</th>
+                            <th>Selling Price</th>
+                            <th>Total</th>
+                        </thead>
+                        <div class="product-rows">
+                            <tr>
+                                <td>Trust Condoms 3pack</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>16%</td>
+                                <td> <span class="currency">Ksh. </span> 100</td>
+                                <td>2600</td>
+                            </tr>
+                            <tr>
+                                <td>Trust Condoms 3pack</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>16%</td>
+                                <td> <span class="currency">Ksh. </span> 100</td>
+                                <td>2600</td>
+                            </tr>
+                            <tr>
+                                <td>Trust Condoms 3pack</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>16%</td>
+                                <td> <span class="currency">Ksh. </span> 100</td>
+                                <td>2600</td>
+                            </tr>
+                            <tr>
+                                <td>Trust Condoms 3pack</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>16%</td>
+                                <td> <span class="currency">Ksh. </span> 100</td>
+                                <td>2600</td>
+                            </tr>
+                            <tr>
+                                <td>Trust Condoms 3pack</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>16%</td>
+                                <td> <span class="currency">Ksh. </span> 100</td>
+                                <td>2600</td>
+                            </tr>
+                            <tr>
+                                <td>Trust Condoms 3pack</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>16%</td>
+                                <td> <span class="currency">Ksh. </span> 100</td>
+                                <td>2600</td>
+                            </tr>
+                            <tr>
+                                <td>Trust Condoms 3pack</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>16%</td>
+                                <td> <span class="currency">Ksh. </span> 100</td>
+                                <td>2600</td>
+                            </tr>
+                            <tr>
+                                <td>Trust Condoms 3pack</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>16%</td>
+                                <td> <span class="currency">Ksh. </span> 100</td>
+                                <td>2600</td>
+                            </tr>
+                            <tr>
+                                <td>Trust Condoms 3pack</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>16%</td>
+                                <td> <span class="currency">Ksh. </span> 100</td>
+                                <td>2600</td>
+                            </tr>
+                        </div>
+                    </table>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
